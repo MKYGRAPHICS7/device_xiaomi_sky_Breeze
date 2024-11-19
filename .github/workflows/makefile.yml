@@ -4,7 +4,7 @@ on:
   push: https://github.com/MKYGRAPHICS7/device_xiaomi_sky_Breeze
     branches: [ "device_xiaomi_sky_Breeze" ]
   pull_request: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp
-    branches: [ "main" ]
+    branches: [ "device_xiaomi_sky_Breeze" ]
 
 jobs:
   build:
