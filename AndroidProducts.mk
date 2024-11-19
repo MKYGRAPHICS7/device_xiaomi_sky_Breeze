@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_breeze.mk
+    $(LOCAL_DIR)/derp_sky.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_breeze-eng \
-    derp_breeze-userdebug \
-    derp_breeze-user
+    derp_sky-eng \
+    derp_sky-userdebug \
+    derp_sky-user
