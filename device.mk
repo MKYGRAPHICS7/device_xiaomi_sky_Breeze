@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/sky
+DEVICE_PATH := device/xiaomi/breeze
 
 # Inherit virtual_ab_ota_product.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
@@ -16,7 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Call the proprietary setup.
-$(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
+$(call inherit-product, vendor/xiaomi/breeze/breeze-vendor.mk)
 
 # Enable updating of APEXes.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -189,7 +189,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # Firmware
-$(call inherit-product-if-exists, vendor/xiaomi/firmware/sky/config.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/firmware/breeze/config.mk)
 
 # F2FS utilities
 PRODUCT_PACKAGES += \
@@ -389,8 +389,8 @@ PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.default \
     init.class_main.sh \
-    init.sky.rc \
-    init.sky.perf.rc \
+    init.breeze.rc \
+    init.breeze.perf.rc \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
@@ -403,7 +403,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.kernel.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.kernel.post_boot.sh \
-    $(LOCAL_PATH)/rootdir/bin/init.sky.perf.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.sky.perf.sh
+    $(LOCAL_PATH)/rootdir/bin/init.breeze.perf.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.breeze.perf.sh
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
