@@ -1,4 +1,4 @@
-# Device Tree for Xiaomi Redmi Note 12R/Redmi 12 5G/POCO M6 Pro 5G (Sky)[](https://github.com/sm4450-development/device_xiaomi_sky/README.md#spec-sheet)
+# Device Tree for Xiaomi Redmi Note 12R/Redmi 12 5G/POCO M6 Pro 5G (Sky)/Poco M6 Plus (Breeze)[](https://github.com/sm4450-development/device_xiaomi_sky/README.md#spec-sheet)
 
 ## Spec Sheet
 
@@ -17,7 +17,5 @@
 | Front Camera | 8 MP, f/2.0, (wide), 1.12µm |
 | Release Date | 2023, August 01 (Global) |
 
-## Device Picture (Redmi 12 5G)
 
-![Redmi12_5G](https://github.com/prateekmaru/device_xiaomi_sky/assets/47496067/7dac6202-af1d-4942-944a-a8bd167ecf3e)
 
