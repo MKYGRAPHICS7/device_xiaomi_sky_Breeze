@@ -1,10 +1,10 @@
 name: Makefile CI
 
 on:
-  push: https://github.com/MKYGRAPHICS7/device_xiaomi_sky_Breeze.git
-    branches: [ "device_xiaomi_sky_Breeze" ]
-  pull_request: https://github.com/MKYGRAPHICS7/device_xiaomi_sky_Breeze.git
-    branches: [ "device_xiaomi_sky_Breeze" ]
+  push: [ "main" ]
+    branches: [ "main" ]
+  pull_request: [ "main" ]
+    branches: [ "main" ]
 
 jobs:
   build:
