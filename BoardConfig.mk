@@ -5,9 +5,9 @@
 #
 
 # Inherit from the proprietary version
--include vendor/xiaomi/sky/BoardConfigVendor.mk
+-include vendor/xiaomi/breeze/BoardConfigVendor.mk
 
-DEVICE_PATH := device/xiaomi/sky
+DEVICE_PATH := device/xiaomi/breeze
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # A/B
@@ -58,7 +58,7 @@ SOONG_CONFIG_ufsbsg += ufsframework
 SOONG_CONFIG_ufsbsg_ufsframework := bsg
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := sky
+TARGET_BOOTLOADER_BOARD_NAME := breeze
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
@@ -87,7 +87,7 @@ BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtbs
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbs/dtbo.img
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_sky
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_breeze
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
@@ -159,7 +159,7 @@ MALLOC_SVELTE := true
 BOARD_USES_METADATA_PARTITION := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := sky, skyin
+TARGET_OTA_ASSERT_DEVICE := breeze, breezein
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
